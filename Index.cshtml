@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@{ Layout = "_Layout";
+   }
+
+    <div class="text-center">
+        <style>
+            h1 {
+                color: #808080;
+            }
+        </style>
+        <h1 class="display-4">wElcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p id="demo"></p>
+
+        <script>
+            var d = new Date();
+            d.setFullYear(2020);
+            document.getElementById("demo").innerHTML = d;
+        </script>
+
+    </div>
+
+
+
+<!-- Multi-statement block -->
